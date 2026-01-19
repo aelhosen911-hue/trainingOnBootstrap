@@ -1,0 +1,130 @@
+:root {
+  --main-color: #4726e1;
+}
+.text-main {
+  color: var(--main-color);
+}
+* {
+  box-sizing: border-box;
+  font-family: "Cairo";
+}
+/* .client-feedback hr {
+  width: 20%;
+  color: var(--main-color);
+  border-width: 4px;
+  margin-top: 10px !important;
+  opacity: 1  !important;
+} */
+/* body {
+} */
+
+/* Header Section */
+header {
+  background-image: url(../imgs/me.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.head-content {
+  color: white;
+}
+.head-content .social-media div {
+  width: 40px;
+  height: 40px;
+  /* text-align: center; */
+  /* padding: 5px; */
+  cursor: pointer;
+}
+.head-content .social-media i {
+  font-size: 24px;
+}
+.head-content .social-media a {
+  transition: 0.3s;
+}
+.head-content .social-media a:hover {
+  border-color: rgb(39, 129, 255) !important;
+  color: rgb(39, 129, 255) !important;
+}
+
+/* About Section */
+#about {
+  position: relative;
+}
+#about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../imgs/dots.jpg);
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.1;
+  filter: blur(1px);
+}
+
+@media (width < 767px) {
+  #about .about-content {
+    text-align: center;
+  }
+  #about .about-content img {
+    width: 50% !important;
+  }
+  #about .about-content p {
+    font-size: 13px;
+    line-height: 1.9;
+  }
+}
+
+/* components Start*/
+.title {
+  font-size: 2.5rem;
+  letter-spacing: 4px;
+}
+.bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  color: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  user-select: none;
+}
+/* components End */
+
+/* testimonials Section */
+.client-feedback {
+  border: solid 4px #f1f1f1;
+}
+.client-feedback h6::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--main-color);
+  margin: 10px auto 0 auto;
+}
+
+.client-img {
+  width: 90px;
+  height: 90px;
+  border: solid 4px #f4f4f4;
+  transform: translateY(40%);
+  margin-bottom: 5px;
+}
+.carousel-item {
+  text-align: center;
+}
+/*  
+.carousel-indicators{
+  bottom: -90px ;
+} */
+.carousel-indicators [data-bs-target] {
+  /* background-color: red; */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-indent: 0;
+  border: solid 2px #f1f1f1;
+}
